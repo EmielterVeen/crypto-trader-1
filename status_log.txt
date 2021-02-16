@@ -1,0 +1,4 @@
+Trade History:
+pattern detected [-1, 1, 1, 1, -1, 1, -1, -1, -1] - Bet outcome is up - Correct: False - Cash: 892.4465589155369
+pattern detected [1, -1, 1, -1, 1, -1, -1, 1, -1] - Bet outcome is down - Correct: False - Cash: 790.1625599596507
+pattern detected [-1, 1, 1, 1, -1, 1, -1, -1, -1] - Bet outcome is up - Correct: True - Cash: 705.368847813601
