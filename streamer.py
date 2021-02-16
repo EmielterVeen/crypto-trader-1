@@ -123,12 +123,9 @@ def main():
         # Loop for checking the time
         while True:
             candles1 = get_candle_data(client, BTC)
+            # if the close time of our initial candles matches the open time of our new candles, a minute has passed
             if candles[1][0] == candles1[0][0]:
-                print(candles)
-                print(candles1)
-                print('binance minute has passed')
-                print(candles[0][0])
-                print(candles1[1][0])
+                print('Binance - Minute has passed')
                 count += 1
                 break
 
@@ -136,9 +133,6 @@ def main():
                 time.sleep(1)
 
         # Main loop for making the trades, this loop will only be reached if a minute has passed
-        print('back in main loop, checking if we have reached 3 iterations.')
-        print(count)
-
         open_candle = candles1[0][1]
         close_candle = candles1[0][4]
 
